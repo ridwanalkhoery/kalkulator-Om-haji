@@ -1,0 +1,25 @@
+KALKULATOR OM HAJI - PROYEK ANDROID
+
+Nama aplikasi: Kalkulator Om Haji
+Ikon: monogram OH warna putih di latar oranye
+Aplikasi berjalan offline dan kalkulator menyimpan pengaturan di perangkat.
+
+PENTING:
+Ini adalah proyek sumber Android. APK belum dibangun di dalam paket ini.
+Workflow GitHub Actions disertakan agar APK debug bisa dibangun secara online tanpa memasang Android Studio di HP.
+
+CARA DARI HP SAJA (perlu akun GitHub):
+1. Buka github.com di Chrome dan masuk/daftar akun.
+2. Buat repository baru bernama kalkulator-om-haji.
+3. Unggah seluruh ISI folder proyek ini ke repository (bukan file ZIP-nya). Pastikan folder .github/workflows ikut terunggah.
+4. Setelah file tampil di repository, buka tab Actions.
+5. Jika diminta, aktifkan Actions. Pilih "Build Kalkulator Om Haji APK", lalu tekan Run workflow.
+6. Tunggu proses selesai dengan tanda hijau.
+7. Buka hasil run, cari bagian Artifacts, lalu unduh "Kalkulator-Om-Haji-APK".
+8. Ekstrak ZIP artifact di HP, lalu buka app-debug.apk untuk memasang. Android mungkin meminta izin "Install unknown apps" untuk browser/file manager yang digunakan.
+
+CATATAN TEKNIS:
+- Build otomatis memakai GitHub Actions dan Android Gradle.
+- APK yang dihasilkan adalah debug APK untuk instalasi pribadi, bukan rilis Play Store.
+- Jika build gagal, kirim screenshot halaman log Actions agar dapat dibantu memperbaikinya.
+- Minimum Android 6.0 (API 23).
